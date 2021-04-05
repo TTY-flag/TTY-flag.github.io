@@ -110,7 +110,11 @@ patchelf --set-interpreter ./glibc-all-in-one-master/libs/2.31-0ubuntu9.2_amd64/
 
 个人感觉第一种会好一点，万一动态库有好多个，那第二种就需要手动一个一个设置了。
 
+## 利用pwntools
 
+例
+
+p = process("./new_chall",env={"LD_PRELOAD":"./libc-2.24.so"})
 
 参考文章
 
